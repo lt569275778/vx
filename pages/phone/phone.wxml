@@ -1,0 +1,18 @@
+<!--pages/phone/phone.wxml-->
+<!-- <form bindsubmit="formSubmit" report-submit="true"> -->
+<scroll-view scroll-y:true>
+
+<view class='top'>
+输入手机号
+</view>
+<view class='center'>
+方便获奖后，客服能联系你
+</view>
+<view class='please'>
+<input placeholder="请输入手机号码" name="phone" bindinput ='Input' auto-focus/>
+</view>
+<image src='../../images/duan.png' class='img' bindtap='submit'></image><text class='next'>下一步</text>
+<!-- <button class="save" bindtap='submit'>下一步</button> -->
+</scroll-view>
+
+<!-- </form> -->

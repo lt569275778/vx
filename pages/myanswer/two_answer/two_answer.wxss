@@ -1,0 +1,112 @@
+/* pages/myanswer/two_answer/two_answer.wxss */
+/* --ZY0927-- */
+.outer{
+         /* border:1px solid red;  */
+    background-color: #f8fbff;
+    border-top:1rpx solid #e0ebfb;
+    height: 100%;
+}
+/* 双人头像 */
+.user{
+     /* border:1px solid red;  */
+}
+.user_L{
+    /* border:1px solid yellow; */
+    display: inline-block;
+    width: 45%;
+}
+.timv{
+    /* border:1px solid red; */
+    display: inline-block;
+    width: 10%;
+    vertical-align: top;
+    margin-top: 94rpx;
+    text-align: center;
+    font-size: 60rpx;
+    color: #e34040;
+}
+.user_R{
+    /* border:1px solid green; */
+    display: inline-block;
+    width: 45%;
+}
+
+
+.head_m{
+    border: 5rpx solid #f9a67c;
+    width: 134rpx;
+    height: 134rpx;
+    border-radius: 50%; 
+    margin: 70rpx auto 20rpx;
+}
+.head_m image{
+    width: 100%;
+    height: 100%;
+}
+.name_m{
+    margin-bottom: 70rpx; 
+    font-size: 26rpx;
+    color: #353535;
+    text-align: center;
+}
+.name_m text{
+    margin: 0 15rpx; 
+}
+
+/* 题目 */
+ .part {
+    margin: 60rpx 74rpx;
+    font-size: 34rpx;
+    color: #353535;
+} 
+.btn_img {
+  width: 50rpx;
+  height: 50rpx;
+  float: right;
+  margin-top: 20rpx;
+}
+.button{
+    margin: 44rpx 74rpx;
+    text-indent: 40rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    background: #fff;
+    font-size: 32rpx;
+    color: #353535;
+    /* box-shadow: 0rpx 8rpx 15rpx #d8e6ff; */
+    box-shadow: 1rpx 8rpx 30rpx 8rpx #d8e6ff;
+}
+
+/* 答对/总共 */
+.reply_total{
+    margin: 6rpx  114rpx 0;
+    font-size: 24rpx;
+    color: #353535;
+}
+.reply_total text:nth-child(1){
+    color: #fb7a12;
+}
+.foot{
+    margin: 76rpx 74rpx;
+}
+.btn{
+    width: 180rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 30rpx;
+    color:#353535;
+    background-color: #fff;
+    float: right;
+}
+.button{
+     /* border:1px solid #d8e6ff; */
+    margin: 44rpx 74rpx;
+    text-indent: 40rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    background: #fff;
+    font-size: 32rpx;
+    color: #353535;
+    text-align: left;
+    box-shadow: 0rpx 8rpx 15rpx #d8e6ff;
+}

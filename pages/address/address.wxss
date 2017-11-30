@@ -1,0 +1,51 @@
+/* pages/address/address.wxss */
+.top{
+  height: 50rpx;
+  background-color: #f8fbff;
+}
+page {  
+  display: block;  
+  min-height: 100%;  
+  background-color:#f8fbff;
+  font-family: "微软雅黑";
+  font-size: 34rpx;
+  color:#888888;
+  position: relative;
+} 
+.info{
+  background-color: #fff;
+}
+.item{
+  height:120rpx;
+  align-items: center;
+  display:flex;
+  margin-left:30rpx;
+  border-bottom:1rpx solid #eee;
+}
+
+input placeholder{
+  color:red;
+}
+.area{
+  width:150rpx;
+  border:1rpx solid #939393;
+}
+.remind{
+  padding-top: 6rpx;
+  color:#e64340;
+  font-size:20rpx;
+}
+.save{
+  width:92%;
+  margin-top:90rpx;
+  background-color: #FB6B46;
+  color:#fff;
+}
+.right{
+  padding-left: 30rpx;
+  width:75%;
+  display:flex;
+}
+input{
+  width:100%;
+}

@@ -1,0 +1,48 @@
+<!--pages/mine/mine.wxml-->
+<scroll-view scroll-y:true>
+  <view class='body'>
+    <view class='top'>
+      <view class='border'>
+      </view>
+      <view class="userinfo">
+        <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+        <block wx:else>
+          <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+          <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </block>
+      </view>
+      <navigator url='../sign/sign'>
+        <view class='sign'>
+          <text class='sing'>签到领积分</text>
+        </view>
+      </navigator>
+    </view>
+    <text class='floatright' wx:if="{{widowsphone==''}}">未绑定</text>
+    <text class='floatright' wx:else="">{{widowsphone}}</text>
+    <view class='borderfunction'>
+      <view class='function' wx:if="{{widowsphone==''}}">
+        <navigator url='../phone/phone'>
+        <text>绑定手机</text>
+        </navigator>
+      </view>
+       <view class='function' wx:else="">
+  
+        <text>绑定手机</text>
+   
+      </view>
+      <view wx:for="{{func}}" wx:key="*this" class='function'>
+        <navigator url='{{item.navigateToUrl}}'>
+          <text>{{item.text}}</text>
+          <text></text>
+        </navigator>
+      </view>
+      <view class='nbsP'>
+        <view wx:for="{{nbsp}}" wx:key="#this" class='function'>
+          <navigator url='{{item.navigateToUrl}}'>
+            <text>{{item.text}}</text>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

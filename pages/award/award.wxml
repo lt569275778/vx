@@ -1,0 +1,7 @@
+<scroll-view scroll-y:true>
+<!--pages/award/award.wxml-->
+<view class='rules'>
+   <image class='rules_i' src="{{Z_img}}"></image>
+</view>
+</scroll-view>
+

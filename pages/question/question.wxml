@@ -1,0 +1,18 @@
+<scroll-view scroll-y:true>
+
+<view class="page">
+  <view class="page_bd">
+    <view class="body_head" bindtap="showitem">1、我如何知道自己是否获奖？ <image src='../../images/more.png' class="img {{xuan?'rotate':'back'}}">></image> </view>
+    <view class="{{open?'display_show':'display_none'}}">获取奖励的用户，系统会推送端内消息通知您，请注意及时查看。</view>
+     <view class="body_head" bindtap="showitem1">2、领奖流程<image src='../../images/more.png' class="img {{xuan1?'rotate':'back'}}">></image></view>
+    <view class="{{open1?'display_show':'display_none'}}">关注“众联官方商城”微信公众--回复“答题领奖”--按指引完成信息核对等操作。</view>
+     <view class="body_head" bindtap="showitem2">3、答题玩法是什么样的？<image src='../../images/more.png' class="img {{xuan2?'rotate':'back'}}">></image></view>
+    <view class="{{open2?'display_show':'display_none'}}">单人答题：单人答题每组6题，答对1题得15分，答错不扣分，全对得100分，总倒计时60秒，如到时未完成，则系统自动交卷。双人答题：对答双方所答题目为同一个题目，数量为12道，单道题限时10秒，对答双方哪方最后答完该题，就自动跳转下一题；单道题计分根据所用时长不同，而得分不同（0-3得15分，3-8秒得10分，8-10秒得5分）；以得分多的一方为胜，胜则得300分，输则扣300分。
+</view>
+      <view class="body_head" bindtap="showitem3">4、积分可以用来做什么？<image src='../../images/more.png' class="img {{xuan3?'rotate':'back'}}">></image></view>
+    <view class="{{open3?'display_show':'display_none'}}">累计一定数量的积分，可提升排名，如果当日分值达到日排行或者月排行榜前十名，就获得相应的奖励，详细内容请查看排行榜奖励规则。</view>
+      <view class="body_head" bindtap="showitem4">5、积分的获取方式？<image src='../../images/more.png' class="img {{xuan4?'rotate':'back'}}">></image></view>
+    <view class="{{open4?'display_show':'display_none'}}">通过签到、答题获取积分。累计签到可获取更多积分。</view>
+  </view>
+</view>
+</scroll-view>

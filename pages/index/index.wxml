@@ -1,0 +1,166 @@
+<!--index.wxml-->
+<!-- 特别备注：ZY1027
+    转换正式版弹框方法：1、.js下 bb: 'block',改为 bb: 'none',2、去掉本页面下的  《绑定手机 弹窗》 注释
+ -->
+<scroll-view style="scroll-x:false">
+
+    <!-- 测试 弹框提醒 ZY1027-->
+    <view class='hid' style="display:{{bb}};">
+        <text class='homie'>亲爱的用户： </text>
+        <text class='qudati' decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;您好，《趣答题》目前处于内测阶段，在此期间参与答题获得奖品或现金红包的活动暂停，但您所得积分仍然保留。</text>
+        <text class='iknow' bindtap='iknow'>我知道了</text>
+    </view>
+
+    <!-- 遮罩层  ZY1027-->
+    <view class='bg' style='display:{{bg}}'></view>
+    <!-- 绑定手机 弹窗 ZY1027-->
+     <!-- <view class='bind_phone' style='display:{{bind_phone}}'>
+        <view class='max_img'>
+            <image src='../../images/tu1027_1.png'></image>
+            <view class='tatil_hint'>绑定手机立即获得
+                <text class='tatil_hint_text'>300</text>积分</view>
+            <navigator url='../phone/phone' bindtap='bind_phone'>
+                <view class='TC_btn'>
+                    <image src='../../images/zu-20.png'></image>
+                </view>
+            </navigator>
+        </view>
+        <view class='close' bindtap='hidden_bg'>
+            <image src='../../images/close.png'></image>
+        </view>
+    </view>  -->
+
+    <view class='div'>
+        <view class='pad'>
+            <image class='shadowtop' src='../../images/shadow_up.png'></image>
+        </view>
+        <view class='theme'>
+
+            <view class="swiper-tab">
+                <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">{{topdiv[0]}}</view>
+                <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">{{topdiv[1]}}</view>
+                <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">{{topdiv[2]}}</view>
+            </view>
+
+            <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:900rpx" bindchange="bindChange">
+                <swiper-item>
+                    <view class='questions' wx:for="{{nav}}" wx:key='unique' bindtap='outChoice' id='{{index}}'>
+                        <view style='width:682rpx;height:200rpx;margin:0rpx auto; background:black'>
+                            <image src='{{item.imgUrl}}' class='questionsimages' style="opacity:{{displayAns[index]=='block'?0.4:1}}"></image>
+                        </view>
+                        <image src='{{item.imagesUrl}}' class='smallquestionsimages1' style="display:{{display[index]}}"></image>
+                        <view class='txt' id='{{index}}' bindtap='choiceEvent' style="display:{{display[index]}}">
+                            <text class='top'>{{item.txt}}</text>
+                            <text class='bottom'>{{item.bottomtxt}}</text>
+                        </view>
+                        <!-- 单双人答题模块 -->
+                        <view class='single_double'>
+                            <view bindtap='singleAns' id="{{index}}" class='outcircle' style="display:{{displayAns[index]}}">
+                                <view class='incircle'>
+                                    <text class='mytext'>单人</text>
+                                </view>
+                            </view>
+                            <view bindtap='doubleAns' id="{{index}}" class='outcircle' style="margin-left:140rpx;display:{{displayAns[index]}}">
+                                <view class='incircle'>
+                                    <text class='mytext'>对答</text>
+                                </view>
+                            </view>
+                        </view>
+                        <!-- 单双人答题模块 -->
+                    </view>
+                </swiper-item>
+                <swiper-item>
+                    <view class='questions' wx:for="{{nav}}" wx:key='unique' bindtap='outChoice' id='{{index}}'>
+                        <view style='width:682rpx;height:200rpx;margin:0rpx auto; background:black'>
+                            <image src='{{item.imgUrl}}' class='questionsimages' style="opacity:{{displayAns[index]=='block'?0.4:1}}"></image>
+                        </view>
+                        <image src='{{item.imagesUrl}}' class='smallquestionsimages1' style="display:{{display[index]}}"></image>
+                        <view class='txt' id='{{index}}' bindtap='choiceEvent' style="display:{{display[index]}}">
+                            <text class='top'>{{item.txt}}</text>
+                            <text class='bottom'>{{item.bottomtxt}}</text>
+                        </view>
+                        <!-- 单双人答题模块 -->
+                        <view class='single_double'>
+                            <view bindtap='singleAns' id="{{index+3}}" class='outcircle' style="display:{{displayAns[index]}}">
+                                <view class='incircle'>
+                                    <text class='mytext'>单人</text>
+                                </view>
+                            </view>
+                            <view bindtap='doubleAns' id="{{index+3}}" class='outcircle' style="margin-left:140rpx;display:{{displayAns[index]}}">
+                                <view class='incircle'>
+                                    <text class='mytext'>对答</text>
+                                </view>
+                            </view>
+                        </view>
+                        <!-- 单双人答题模块 -->
+                    </view>
+                </swiper-item>
+                <swiper-item>
+                    <view class='questions' wx:for="{{nav}}" wx:key='unique' bindtap='outChoice' id='{{index}}'>
+                        <view style='width:682rpx;height:200rpx;margin:0rpx auto; background:black'>
+                            <image src='{{item.imgUrl}}' class='questionsimages' style="opacity:{{displayAns[index]=='block'?0.4:1}}"></image>
+                        </view>
+                        <image src='{{item.imagesUrl}}' class='smallquestionsimages1' style="display:{{display[index]}}"></image>
+                        <view class='txt' id='{{index}}' bindtap='choiceEvent' style="display:{{display[index]}}">
+                            <text class='top'>{{item.txt}}</text>
+                            <text class='bottom'>{{item.bottomtxt}}</text>
+                        </view>
+                        <!-- 单双人答题模块 -->
+                        <view class='single_double'>
+                            <view bindtap='singleAns' id="{{index+6}}" class='outcircle' style="display:{{displayAns[index]}}">
+                                <view class='incircle'>
+                                    <text class='mytext'>单人</text>
+                                </view>
+                            </view>
+                            <view bindtap='doubleAns' id="{{index+6}}" class='outcircle' style="margin-left:140rpx;display:{{displayAns[index]}}">
+                                <view class='incircle'>
+                                    <text class='mytext'>对答</text>
+                                </view>
+                            </view>
+                        </view>
+                        <!-- 单双人答题模块 -->
+                    </view>
+                </swiper-item>
+            </swiper>
+        </view>
+        <image class='center' src='../../images/shadow.png'></image>
+
+        <!--这是大类主题  -->
+        <view class='theme' bindtap='comOutChoice'>
+            <view class='header'>
+                <image class='imagesleft' src="../../images/zuozhuangshi.png"></image>
+                <text class='bigclass'>{{topdiv[3]}}</text>
+                <image class='imagesright' src="../../images/youzhuangshi.png"></image>
+            </view>
+            <view>
+                <view class='box'>
+                    <view class='questions' wx:for="{{quetions}}" wx:key='unique'>
+                        <image src='{{item.imgUrl}}' class='questionsimages'>
+                        </image>
+                        <image src='{{item.imagesUrl}}' class='smallquestionsimages' style="display:{{comDisplay[index]}}">
+                        </image>
+                        <view class='txt1' id="{{index}}" bindtap='comChoiceEvent' style="display:{{comDisplay[index]}}">
+                            <text class='top'>{{item.txt}}</text>
+                            <text class='bottom'>{{item.bottomtxt}}</text>
+                        </view>
+                        <!-- 单双人答题模块 -->
+                        <view class='single_double' style="top:-170rpx">
+                            <view bindtap='singleAns' id="{{index+9}}" class='outcircle' style="display:{{comDisplayAns[index]}}">
+                                <view class='incircle'>
+                                    <text class='mytext'>单人</text>
+                                </view>
+                            </view>
+                            <view bindtap='doubleAns' id="{{index+9}}" class='outcircle' style="margin-left:140rpx;display:{{comDisplayAns[index]}}">
+                                <view class='incircle'>
+                                    <text class='mytext'>对答</text>
+                                </view>
+                            </view>
+                        </view>
+                        <!-- 单双人答题模块 -->
+                    </view>
+                </view>
+            </view>
+            <image class='shadowdown' src='../../images/shadow_down.png'></image>
+        </view>
+    </view>
+</scroll-view>

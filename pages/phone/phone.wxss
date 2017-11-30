@@ -1,0 +1,50 @@
+/* pages/phone/phone.wxss */
+.top{
+  margin-top: 138rpx;
+  text-align: center;
+  color: #353535;
+  font-size: 48rpx;
+  font-weight: 550
+}
+.center{
+  margin-top: 30rpx;
+  color: #888;
+  font-size: 34rpx;
+  text-align: center;
+}
+.please{
+  width: 520rpx;
+  height: 80rpx;
+  border-bottom: 1px solid #dcdcdc;
+  margin-left: 120rpx;
+  margin-bottom: 324rpx;
+  margin-top: 140rpx;
+  text-align: center;
+  
+}
+input{
+
+  font-size: 42rpx;
+  text-align: center;
+}
+.save{
+   width:72%;
+  /* margin-top:90rpx; */
+  background-color: #FB6B46;
+  color:#fff;
+}
+.img{
+  display: block;
+  width: 500rpx;
+  height: 94rpx;
+  margin: 0 auto;
+  text-align: center
+}
+.next{
+  position: relative;
+  top: -75rpx;
+  left: 320rpx;
+  color: #fff;
+  font-size: 36rpx;
+  font-weight: 500
+}

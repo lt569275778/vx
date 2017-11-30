@@ -1,0 +1,113 @@
+/* pages/myanswer/oneanswer/oneanswer1/oneanswer1.wxss */
+/* --ZY0927-- */
+.outer{
+    background-color: #f8fbff;
+    border-top:1rpx solid #e0ebfb;
+    height: 100%;
+}
+.score{
+    width: 260rpx;
+    height: 248rpx;
+    margin: 20rpx auto;
+    position: relative; 
+}
+.score image{
+    width: 100%;
+    height: 100%;
+}
+.score_main{
+    position: absolute;
+    margin-left: -90rpx;
+    left: 50%;
+    text-align: center;
+    display: inline;
+}
+.grade{
+    font-size: 36rpx;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    width: 80rpx;
+    height: 46rpx;
+    margin-top: 40rpx; 
+}
+.time {
+    font-size: 0;
+    color: #353535;
+    display: inline-block;
+    width: 180rpx;
+    height: 38rpx;
+}
+
+.time text:nth-child(1) {
+    padding-top: 10rpx;
+    height: 28rpx;
+    float: left;
+    font-size: 24rpx;
+}
+
+.time text:nth-child(3) {
+    padding-top: 10rpx;
+    height: 28rpx;
+    font-size: 24rpx;
+    float: right;
+}
+
+.time_color {
+    font-size: 36rpx;
+    color: #e34040;
+}
+
+/* 题目 */
+ .part {
+    margin: 60rpx 74rpx;
+    font-size: 34rpx;
+    color: #353535;
+} 
+
+.btn_img {
+  width: 50rpx;
+  height: 50rpx;
+  float: right;
+  margin-top: 20rpx;
+}
+.button{
+    margin: 40rpx 74rpx;
+    text-indent: 40rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    background: #fff;
+    font-size: 32rpx;
+    color: #353535;
+    text-align: left;
+    box-shadow: 0rpx 8rpx 15rpx #d8e6ff;
+}
+
+/* 答对/总共 */
+.reply_total{
+    margin: 6rpx  114rpx 0;
+    font-size: 24rpx;
+    color: #353535;
+}
+.reply_total text:nth-child(1){
+    color: #fb7a12;
+}
+.foot{
+    margin: 66rpx 74rpx;
+}
+.btn{
+    width: 180rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 30rpx;
+    color:#353535;
+    background-color: #fff;
+    float: right;
+}
+
+.swer_Z{
+    height: 130rpx;
+     padding: 30rpx 0; 
+    
+}
+

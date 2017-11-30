@@ -1,0 +1,30 @@
+<!--地址管理-->
+<scroll-view scroll-y:true>
+  <radio-group class="radio-group" wx:for="{{address}}">
+    <view hidden="{{hiddenAddress}}" class="address">
+      <view class="address-detail">
+        <view class="address-name-phone">
+          <text class="address-name">{{item.uaConsignee}}</text>
+          <text class="address-phone">{{item.uaPhone}}</text>
+        </view>
+        <view class="address-info" wx:if="{{item.uaDistrict=='0'}}">{{item.uaProvince}}{{item.uaCity}}{{item.uaAddress}}</view>
+        <view class="address-info" wx:else=" ">{{item.uaProvince}}{{item.uaCity}}{{item.uaDistrict}}{{item.uaAddress}}</view>
+        <view class="address-edit">
+          <view class='body'>
+            <text bindtap="setDefault" class='addres' data-id="{{item.uaId}}">设置为默认地址</text>
+            <view class="address-icon" bindtap="setDefault" data-id="{{item.uaId}}">
+              <radio checked="{{item.uaStatus==1?true:false}}" value="{{index}}" color="red" />
+            </view>
+            <text data-id="{{item.uaId}}" bindtap="delAddress" class='pull-right'>删除</text>
+            <text data-id="{{item.uaId}}" bindtap="modifyAddress" class='pull-right'>编辑</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </radio-group>
+  <navigator url="../address?cartId={{cartId}}">
+    <view hidden="{{hiddenAddress}}" class="add-address">
+      <view class='addaddres'></view>新增地址
+    </view>
+  </navigator>
+</scroll-view>

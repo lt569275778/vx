@@ -1,0 +1,43 @@
+/* pages/question/question.wxss */
+.page_bd{
+    padding: 10px;
+    background-color: #fff;
+}
+.body_head{
+    border-top: 1px solid #f4f4f4;
+    border-bottom: 1pxsolid #f4f4f4;
+    font-size: 34rpx;
+    color: #353535;
+    padding: 44rpx 24rpx;
+    box-sizing: border-box;
+}
+.rotate{
+  transform: rotateZ(90deg);
+  transform-origin:20rpx 20rpx;
+}
+.back{
+  transform: rotateZ(0deg);
+  transform-origin:20rpx 20rpx;
+}
+.img{
+  width: 40rpx;
+  height: 40rpx;  
+  float: right;
+  padding-right: 24rpx;
+  position: relative;
+  transition: transform 0.25s linear 0s;
+  
+}
+.display_show{
+    display: block;
+    /* border: 1px solid;    
+    border-color: beige; */
+    padding: 44rpx 24rpx;
+    color: #888;
+    font-size: 28rpx;
+    line-height: 48rpx;
+    
+}
+.display_none{
+    display: none;
+}

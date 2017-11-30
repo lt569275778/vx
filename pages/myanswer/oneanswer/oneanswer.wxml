@@ -1,0 +1,35 @@
+<!--pages/myanswer/oneanswer/oneanswer/oneanswer.wxml-->
+<!-- --ZY0927 -- -->
+<view class='outer'>
+    <view class='score'>
+        <image class="sco_img" src='../../../images/defen.png'></image>
+        <view class='score_main'>
+            <swiper current="{{index}}" vertical="true" class='swer_Z'>
+                <swiper-item>
+                    <text class='grade'>{{nowcore}}分</text>
+                </swiper-item>
+                <swiper-item>
+                    <text class='grade'>{{nowcore}}分</text>
+                </swiper-item>
+            </swiper>
+            <text class='time'>
+                <text>总倒计时：</text>
+                <text class='time_color'>{{time}}</text>
+                <text>s</text>
+            </text>
+        </view>
+    </view>
+    <view class='part' disabled='true' style="opacity:{{opacity}}">{{question}}</view>
+    <button wx:for="{{answer}}" wx:key="*this" class="button" id='{{index}}' disabled='{{btn_disabled}}' style='opacity:{{opacity}}' bindtap='btn_click'>{{item}}
+        <image class='btn_img' style="display:{{display[index]}}" src="{{imgurl[index]}}"></image>
+    </button>
+
+    <view class='reply_total'>答对/总共:
+        <text>{{nowcore/15}}</text>/
+        <text>{{questionNums}}</text>
+    </view>
+    <view class='foot'>
+        <button class='btn' bindtap='resubmit'>提前交卷</button>
+        <view style='clear: both;'></view>
+    </view>
+</view>

@@ -1,0 +1,44 @@
+<!--pages/myanswer/two_answer/two_answer.wxml-->
+<!-- --ZY0927 -- -->
+ <view class='outer'>
+    <view class='user'>
+        <!-- 用户头像1 -->
+        <view class='user_L'>
+            <view class='head_m'>
+                <image style='border-radius: 50%' src='{{head_L}}'></image>
+            </view>
+            <view class='name_m'>
+                <text>{{name_L}}</text>
+                <text>{{score_L}}</text>
+            </view>
+        </view>
+
+        <!-- 计时 -->
+        <view class='timv'>{{time}}</view>
+
+        <!-- 用户头像2 -->
+        <view class='user_R'>
+            <view class='head_m'>
+                <image  style='border-radius: 50%' src='{{head_R}}'></image>
+            </view>
+            <view class='name_m'>
+                <text>{{name_R}}</text>
+                <text>{{score_R}}</text>
+            </view>
+        </view>
+    </view>
+    
+    <view class='part' disabled='true' style="opacity:{{opacity}}">{{question}}</view> 
+     <button wx:for="{{answer}}" wx:key="*this" class="button" id='{{index}}' disabled='{{btn_disabled}}' style='opacity:{{opacity}}' bindtap='btn_click'>{{item}}
+    <image class='btn_img' style="display:{{display[index]}}" src="{{imgurl[index]}}"></image>
+  </button>
+ 
+    <view class='reply_total'>答对/总共:
+        <text>{{rightcount}}</text>/
+        <text>12</text>
+    </view>
+    <view class='foot'>
+        <view style='clear: both;'></view>
+    </view>
+</view>
+

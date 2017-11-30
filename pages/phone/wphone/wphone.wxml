@@ -1,0 +1,23 @@
+<!--pages/phone/wphone/wphone.wxml-->
+<!-- <form bindsubmit="formSubmit" report-submit="true"> -->
+<scroll-view scroll-y:true>
+
+<view class='top'>
+  输入验证码
+</view>
+<view class='center'>
+  {{callphone}}
+</view>
+<view class='please'>
+  <input placeholder="请输入验证码" bindinput='input' name="input1" auto-focus/>
+  <text wx:if="{{second=='0'}}" class='right1' bindtap='send'>发送</text>
+  <text wx:else='' class='right'> <text style="color:#e34040">{{second}}s</text>后重新发送</text>
+</view>
+<image src='../../../images/chang.png' class='img' bindtap='submit'></image><text class='next'>提交</text>
+<!-- <button class="save" bindtap='submit'>提交</button> -->
+<!-- </form> -->
+<view class='show' style='display:{{hid}}'>
+  <image src='../../../images/chenggong.png' class='img'></image>
+  <text class='thank'>恭喜你！绑定成功</text>
+</view>
+</scroll-view>

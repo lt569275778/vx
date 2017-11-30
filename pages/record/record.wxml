@@ -1,0 +1,20 @@
+<!--pages/record/record.wxml-->
+<view class='body' wx:for="{{record}}">
+  <view class='top'></view>
+    <view class='down'>
+  <view class='left'>
+    
+      <view class='detailsup'>
+        {{item.prizeName}}
+      </view>
+      <view class='detailsdown'>
+        <text decode="{{true}}">{{item.awardTime}}</text>
+      </view>
+    </view>
+    <view class='right'>
+      <text decode="{{true}}"wx:if="{{item.type=='00'}}">日排行 &nbsp;{{item.rank}}</text>
+      <text decode="{{true}}" wx:else="">月排行&nbsp;{{item.rank}}</text>
+      
+    </view>
+  </view>
+</view>

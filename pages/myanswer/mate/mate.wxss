@@ -1,0 +1,108 @@
+/* pages/myanswer/mate/mate.wxss */
+
+.outer {
+    border-top: 1px solid #e0ebfb;
+    border-bottom: 1px solid #FFF;
+    /* border: solid black 1rpx; */
+}
+
+.top {
+     height: 50%; 
+    background-color: #faa87f;
+    /* border: solid black 1rpx; */
+}
+
+.M_top {
+    color: #f8fbff;
+    font-size: 48rpx;
+    text-align: center;
+     padding: 100rpx 0 30rpx 0; 
+}
+
+.M_img {
+    width: 200rpx;
+    height: 200rpx;
+    border: 10rpx solid #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 110rpx; 
+}
+
+.M_img image {
+    width: 100%;
+    height: 100%;
+}
+
+.foot {
+    background-color: #fff;
+     height: 50%; 
+}
+
+.F_foot {
+    color: #f9a67c;
+    font-size: 48rpx;
+    text-align: center;
+     padding: 30rpx 0 100rpx 0; 
+}
+
+.F_img {
+    width: 200rpx;
+    height: 200rpx;
+    border: 10rpx solid #f9a67c ;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 150rpx; 
+    
+}
+
+.F_img image {
+    width: 100%;
+    height: 100%;
+}
+
+.vs1 {
+    height: 55rpx;
+    font-size: 0;
+    text-align: center;
+}
+
+.vs1 image {
+    width: 165rpx;
+    height: 55rpx;
+}
+
+.vs2 {
+    height: 55rpx;
+    font-size: 0;
+    text-align: center;
+}
+
+.vs2 image {
+    width: 165rpx;
+    height: 55rpx;
+}
+
+.top_time{
+  /* border:1px solid red; */
+  position: absolute;
+  z-index: 99;
+  top:20rpx;
+  right: 30rpx;
+  width: 106rpx;
+  height: 97rpx;
+}
+.top_time image{
+  width: 100%;
+  height: 100%;
+}
+.top_text{
+ position: absolute;
+ z-index: 100;
+ top:27rpx;
+ right: 39rpx;
+ font-size: 34rpx;
+ color: red;
+}
+.top_text text{
+  color: #000;
+}

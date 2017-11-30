@@ -1,0 +1,105 @@
+<!--pages/logs/logs.wxml-->
+<!-- ZY0928 -->
+<scroll-view style='scroll-x:false'>
+
+    <view class='outer'>
+        <view class='logs_top'>
+            <view class='c1'>
+                <navigator url='reward_rules/reward_rules'>
+                    <view class='doubt'>
+                        <image src='../../images/pic4.png'></image>
+                    </view>
+                </navigator>
+            </view>
+
+            <view class='integral'>
+                <view class='excircle'>
+                    <view class='fillet'>
+                        <text class='grade'>{{grade}}</text>
+                        <text class='grade_til'>累计积分</text>
+                    </view>
+                </view>
+            </view>
+
+            <view class='logs_list'>
+                <view>
+                    <text>昨日排行</text>
+                    <text>{{logs}}</text>
+                </view>
+                <view>
+                    <text>上月排行</text>
+                    <text>{{month}}</text>
+                </view>
+                <view>
+                    <text>准确率</text>
+                    <text>{{correct}}</text>
+                </view>
+                <view>
+                    <text>累计答题</text>
+                    <text>{{con_number}}题</text>
+                </view>
+            </view>
+            <view class='sahde'>
+                <image src='../../images/ph-pic92x.png'></image>
+            </view>
+        </view>
+
+        <view class='logs_main'>
+            <view class="btn_L {{currentTab == 0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">当前排行</view>
+            <view class="btn_R {{currentTab == 1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">当月排行</view>
+            <swiper current="{{currentTab}}" class="swiper-box" duration="300" bindchange="bindChange">
+                <!-- 日排行  -->
+                <swiper-item>
+                    <view class='myModule'>
+                         <text class='myLog'>{{myLog_L}}</text> 
+                        <view>
+                            <image src='{{myImg_L}}'></image>
+                        </view>
+                        <text class='myName'>{{myName_L}}</text>
+                         <text class='myNumber'>{{myNumber_L}}</text> 
+                    </view>
+
+                    <view class='foot'>
+                        <view class='first_myModule' wx:for='{{array_L}}' wx:key="unique" style="border-bottom:{{index == 10 ? ' 0rpx;':'4rpx solid #f4f4f4;' }}">
+                            <text class='con_Log' style="display:{{index > 2 ? 'block':'none'}}">{{item.day_rank}}</text>
+                            <view class='first_log' style="display:{{index < 3 ? 'block':'none'}};">
+                                <image src='{{images[index]}}'></image>
+                            </view>
+                            <view class='first_head'>
+                                <image src='{{item.ui_path}}'></image>
+                            </view>
+                            <text class='first_myName'>{{item.ui_name}}</text>
+                            <text class='first_myNumber'>{{item.uds_total_score}}</text>
+                        </view>
+                    </view>
+                </swiper-item>
+
+                <!-- 月排行  con_Number-->
+                <swiper-item>
+                    <view class='myModule'>
+                         <text class='myLog'>{{myLog_R}}</text> 
+                        <view>
+                            <image src='{{myImg_R}}'></image>
+                        </view>
+                        <text class='myName'>{{myName_R}}</text>
+                         <text class='myNumber'>{{myNumber_R}}</text> 
+                    </view>
+
+                    <view class='foot'>
+                        <view class='first_myModule' wx:for='{{array_R}}' wx:key="unique" style="border-bottom:{{index == 10 ? ' 0rpx;':'4rpx solid #f4f4f4;' }}">
+                            <text class='con_Log' style="display:{{index > 2 ? 'block':'none'}}">{{item.month_rank}}</text>
+                            <view class='first_log' style="display:{{index < 3 ? 'block':'none'}};">
+                                <image src='{{images[index]}}'></image>
+                            </view>
+                            <view class='first_head'>
+                                <image src='{{item.ui_path}}'></image>
+                            </view>
+                            <text class='first_myName'>{{item.ui_name}}</text>
+                            <text class='first_myNumber'>{{item.ums_total_score}}</text>
+                        </view>
+                    </view>
+                </swiper-item>
+            </swiper>
+        </view>
+    </view>
+</scroll-view>

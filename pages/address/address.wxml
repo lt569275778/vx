@@ -1,0 +1,67 @@
+<!--pages/address/modify-address/modifyaddress.wxml-->
+<!-- 信息部分开始 -->
+<scroll-view scroll-y:true>
+
+<form bindsubmit="formSubmit" report-submit="true">
+  <view class='top'></view>
+  <view class="info">
+    <!-- 姓名部分 -->
+    <view class="item">
+      <view class="right">
+        <input type="text" name="name" placeholder="{{name}}" focus="{{focus}}" />
+      </view>
+    </view>
+    <!-- 电话部分 -->
+    <view class="item">
+
+      <view class="right">
+        <input name="text" type="number" name="phone" placeholder="{{tel}}" focus="{{focus}}" />
+      </view>
+    </view>
+    <!-- 收货地址部分 -->
+    <view class="item">
+
+      <view class="right">
+          <picker bindchange="bindPickerChangeshengArr" value="{{shengIndex}}" range="{{shengArr}}" data-id="{{shengId[shengIndex]}}">
+            <view class="picker">
+              选择省份：{{shengArr[shengIndex]}}
+              <input hidden="true" name="province" value="{{shengArr[shengIndex]}}" />
+            </view>
+          </picker>
+      
+      </view>
+    </view>
+    <view class="item">
+
+      <view class="right">
+        <picker bindchange="bindPickerChangeshiArr" value="{{shiIndex}}" range="{{shiArr}}">
+        <view class="picker">
+          选择城市：{{shiArr[shiIndex]}}
+          <input hidden="true" name="city" value="{{shiArr[shiIndex]}}"/>
+        </view>
+      </picker>
+      </view>
+    </view>
+    <view class="item">
+
+      <view class="right">
+          <picker bindchange="bindPickerChangequArr" value="{{quIndex}}" range="{{quArr}}">
+        <view class="picker">
+          选择地区：{{quArr[quIndex]}}
+          <input hidden="true" name="town" value="{{quArr[quIndex]}}"/>
+        </view>
+      </picker>
+      
+      </view>
+    </view>
+    <!-- 详细地址部分 -->
+    <view class="item">
+      <view class="right">
+        <input name="address" type="text" placeholder="{{door}}" focus="{{focus}}" />
+      </view>
+    </view>
+  </view>
+  <!-- 信息部分结束 -->
+  <button class="save" formType="submit">保存</button>
+</form>
+</scroll-view>

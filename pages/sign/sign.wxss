@@ -1,0 +1,257 @@
+/* pages/sign/sign.wxss */
+
+.iimg {
+  height: 380rpx;
+  position: relative;
+}
+
+.iiimg::after {
+  /* content: ; */
+  position: absolute;
+  left: 0rpx;
+  top: 0rpx;
+}
+
+.top {
+  width: 750rpx;
+  height: 380rpx;
+}
+
+.signscore {
+  position: absolute;
+  top: 200rpx;
+  left: 320rpx;
+  font-size: 28rpx;
+  color: #353535;
+}
+
+.number {
+  position: absolute;
+  top: 125rpx;
+  left: 345rpx;
+  font-size: 48rpx;
+  color: #fb7a12;
+}
+
+.down {
+  width: 100%;
+  height: 50rpx;
+  background-color: #f8fbff;
+}
+
+#btn1 {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: 96rpx;
+  left: 285rpx;
+  background-color: #fff;
+  color: #fb7a12;
+  font-size: 48rpx;
+}
+
+#btn2 {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: 96rpx;
+  left: 285rpx;
+  background-color: #fff;
+  color: #fb7a12;
+  font-size: 48rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date {
+  font-size: 24rpx;
+  color: #353535;
+}
+
+.idontknow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  margin-top: 60rpx;
+}
+
+.todaysign {
+  text-align: center;
+}
+
+.iiimg {
+  width: 74rpx;
+  height: 86rpx;
+}
+
+.iiiimg {
+  width: 74rpx;
+  height: 74rpx;
+  position: relative;
+  top: -11rpx;
+}
+
+.bottom {
+  position: relative;
+  margin-bottom: 44rpx;
+  margin-top: 107rpx;
+}
+
+.bg_05 {
+  width: 701rpx;
+  height: 60rpx;
+  margin-left: 30rpx;
+}
+
+.signscore {
+  display: inline-block;
+  font-size: 28rpx;
+  color: #353535;
+}
+
+.signscorerule {
+  color: #fff;
+  font-size: 32rpx;
+  position: absolute;
+  top: 6rpx;
+  left: 290rpx;
+}
+
+.rank {
+  padding-left: 32rpx;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.num {
+  color: #fff;
+  font-size: 24rpx;
+  position: absolute;
+  top: 4rpx;
+  left: 47rpx;
+}
+
+.radius {
+  display: inline-block;
+  width: 100rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background-color: #fb7a12;
+  margin-right: 10rpx;
+}
+
+.radius1 {
+  display: inline-block;
+  width: 52rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background-color: #fb7a12;
+  margin-right: 10rpx;
+}
+
+.ranktwo {
+  position: relative;
+  padding-left: 32rpx;
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.txt {
+  font-size: 26rpx;
+  color: #353535;
+}
+
+/*日期样式  */
+
+/**index.wxss**/
+
+.t_red {
+  color: red;
+}
+
+.t_blue {
+  color: royalblue;
+}
+
+.time {
+  padding: 16rpx 20rpx;
+  background-color: wheat;
+  display: flex;
+}
+
+.time view {
+  flex: 1;
+  font-size: 30rpx;
+}
+
+.time view text {
+  font-size: 38rpx;
+}
+
+.weekName {
+  background-color: gainsboro;
+  width: 100%;
+  display: flex;
+  padding: 16rpx 0;
+}
+
+.weekName view {
+  flex: 1;
+  text-align: center;
+}
+
+.sunday, .saturday {
+  color: red;
+}
+
+.week {
+  width: 100%;
+}
+
+.week view {
+  width: 10.7%;
+  display: inline-block;
+  padding-left: 24rpx;
+  text-align: center;
+}
+
+.week view text {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+.calendarSign {
+  margin: 20rpx;
+}
+
+.dayScore {
+  position: relative;
+  top: -68rpx;
+  color: #fb7a12;
+  font-size: 28rpx;
+}
+
+.date {
+  /* display: inline-block; */
+  position: relative;
+  top: -10rpx;
+  font-size: 24rpx;
+  color: #353535;
+}
+
+.cc {
+  position: relative;
+  top: -68rpx;
+  color: #888;
+  font-size: 28rpx;
+}

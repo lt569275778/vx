@@ -1,0 +1,37 @@
+<!--pages/myanswer/statistics/statistics.wxml-->
+<!-- 答题结果 ZY0927-->
+<view class='score_statistics'>
+    <view class='head_m'>
+        <image src='{{head}}'></image>
+    </view>
+    <view class='name_m'>
+        <text>{{name}}</text>
+        <text>{{score}}</text>
+    </view>
+    <view class='remark'>
+        <text>{{remark}}</text>
+    </view>
+    <view class='main'>
+        <view>
+            <text>总答题：</text>
+            <text>{{answer_number}}</text>
+        </view>
+        <view>
+            <text>答对数：</text>
+            <text>{{right_amount}}</text>
+        </view>
+        <view>
+            <text>本轮得分：</text>
+            <text>{{the_score}}</text>
+        </view>
+        <view>
+            <text>额外奖励：</text>
+            <text>{{award}}</text>
+        </view>
+        <view>
+            <text>今日排名：</text>
+            <text>{{ranking}}</text>
+        </view>
+    </view>
+    <button class='btn' bindtap='continue_ans'>再来一局</button>
+</view>

@@ -1,0 +1,32 @@
+<!--pages/myanswer/mate/mate.wxml-->
+ <view class='outer'> 
+ <view class='top_time'>
+    <image src='../../../images/zhong.png'></image>
+    <text class='top_text'>{{time}}
+    <!-- <text>s</text> -->
+    </text>
+ </view>
+    <view class='top'>
+        <view class='M_top'>
+            <text>{{M_top}}</text>
+        </view>  
+        <view class='M_img'>
+            <image style='border-radius: 50%' src='{{M_img}}'></image> 
+        </view>
+        <view class='vs1'>
+            <image src='../../../images/vs_01.png'></image>
+        </view> 
+    </view>
+
+    <view class='foot'>
+        <view class='vs2'>
+            <image src='../../../images/vs_02.png'></image>
+        </view> 
+        <view class='F_img'>
+            <image style='border-radius: 50%' src='{{F_img}}'></image> 
+        </view>  
+         <view class='F_foot'>
+            <text>{{F_foot}}</text>
+        </view>     
+    </view>
+</view> 

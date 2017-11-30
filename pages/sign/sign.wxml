@@ -1,0 +1,57 @@
+<!--pages/sign/sign.wxml-->
+ <scroll-view style='scroll-x:false'> 
+<view class='body'>
+  <view class='iimg'>
+    <image src='../../images/bg_04.png' class='top'></image>
+    <view class="calendarSign">
+      <button bindtap="calendarSign" id='btn1'>{{num1}}
+      </button>
+      <view class='signscore'>签到积分</view>
+    </view>
+    <view class='signscore'>
+    </view>
+  </view>
+  <view class='center'>
+    <view class='todaysign' wx:if="{{num3==1}}">
+      <text decode="{{true}}" style='display:inline-block'>今日已签到&nbsp;&nbsp;<text style='color:#fb7a12'>{{num1}}</text>&nbsp;&nbsp;!&nbsp;&nbsp;连续签到<text decode="{{true}}" style='color:#fb7a12;display:inline-block'>&nbsp;{{num2}}</text>&nbsp;天 </text>
+    </view>
+    <view class='todaysign' wx:else="">
+      <text decode="{{true}}">今日未签到</text>
+    </view>
+    <view class='dontknow'>
+      <view class='idontknow'>
+        <view class='date'>
+          <view class="week" style='margin-top:60rpx;'>
+            <!--开心循环日期-->
+            <view wx:for="{{num}}" wx:key="*this">
+              <image wx:if="{{item.isSign==1}}" class='iiimg' src='../../images/yiqiandao.png'></image>
+              <image wx:else=" " class='iiiimg' src='../../images/yuan.png'></image>
+              <text wx:if="{{item.isSign==1}}" class="dayScore">+{{item.dayScore}}</text>
+              <text wx:else="" class="cc">+{{item.dayScore}}</text>
+              <text class='date'>{{item.date}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='bottom'>
+      <image src='../../images/bg_05.png' class='bg_05'></image>
+      <text class='signscorerule'>签到积分规则</text>
+    </view>
+    <view>
+      <view class='rank'>
+        <view class='radius'>
+          <text class='num'>1</text>
+        </view>
+        <text class='txt'>每日可签到一次，以七天为周期，每次签到得20分，连续签到三天得40分，连续签到七天得60分，一个周期结束后将自动刷新到下一周期。</text>
+      </view>
+      <view class='ranktwo'>
+        <view class='radius1'>
+          <text class='num'>2</text>
+        </view>
+        <text class='txt'>点击上方“点此签到”即代表当日签到成功，所得积分计入您累计积分.</text>
+      </view>
+    </view>
+  </view>
+</view>
+ </scroll-view> 

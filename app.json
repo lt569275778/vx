@@ -1,0 +1,59 @@
+{
+    "pages": [
+        "pages/index/index",
+        
+        "pages/phone/wphone/wphone",
+        
+        "pages/phone/phone",
+        
+        "pages/mine/mine",
+        "pages/sign/sign",       
+        "pages/award/award",
+        "pages/logs/logs",
+        "pages/question/question",
+        "pages/address/address",
+        "pages/logs/reward_rules/reward_rules",
+        "pages/address/user-address/user-address",
+        "pages/address/modify-address/modifyaddress",
+        "pages/myanswer/statistics/statistics",
+        "pages/details/details",
+        "pages/record/record",
+        "pages/myanswer/oneanswer/oneanswer",
+        "pages/myanswer/two_answer/two_answer",
+        "pages/myanswer/mate/mate",
+        "pages/myanswer/t_statistics/t_statistics"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": "true"
+    },
+    "tabBar": {
+        "color": "#aaa",
+        "selectedColor": "#fb7b12",
+        "backgroundColor": "#fff",
+        "list": [
+            {
+                "iconPath": "images/dati_gray.png",
+                "selectedIconPath": "images/dati_yellow.png",
+                "pagePath": "pages/index/index",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/logs/logs",
+                "text": "排名",
+                "iconPath": "images/paihang_gray.png",
+                "selectedIconPath": "images/paihang_yellow.png"
+            },
+            {
+                "pagePath": "pages/mine/mine",
+                "text": "个人",
+                "iconPath": "images/wode_gray.png",
+                "selectedIconPath": "images/wode_yellow.png"
+            }
+        ]
+    },
+    "debug":true
+}

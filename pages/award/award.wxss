@@ -1,0 +1,9 @@
+/* pages/award/award.wxss */
+.rules {
+    font-size: 0;
+}
+
+.rules_i {
+    width: 100%;
+    height: 4113rpx;
+}

@@ -1,0 +1,23 @@
+<!--pages/details/details.wxml-->
+<scroll-view scroll-y:true>
+<view class='body'>
+  <view class='top'></view>
+    <view class='down' wx:for="{{details}}" wx:key="#this">
+  <view class='left'>
+      <view class='detailsup'>
+      <!-- <text decode="{{true}}" wx:if="{{item.tradeType =='00'}}">单人答题积分{{item.score}}</text> -->
+
+        {{item.tradeType}}
+      </view>
+      <view class='detailsdown'>
+        <text decode="{{true}}">{{item.tradeTime}}</text>
+      </view>
+    </view>
+    <view class='right'>
+      <text decode="{{true}}" wx:if="{{item.uafOutIn=='01'}}">+{{item.score}}</text>
+      <text decode="{{true}}" wx:else=" ">-{{item.score}}</text>
+      
+    </view>
+  </view>
+</view>
+</scroll-view>

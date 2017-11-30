@@ -1,0 +1,4 @@
+<!-- 奖励规则 servUrl: 'https://www.ego168.cn/answer'-->
+<view class='rules'>
+   <image class='rules_i' src="{{Z_img}}"></image>
+</view>

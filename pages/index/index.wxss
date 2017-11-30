@@ -1,0 +1,320 @@
+/**index.wxss**/
+
+.pad {
+    height: 60rpx;
+}
+
+.hid {
+    width: 520rpx;
+    height: 440rpx;
+    background-color: #fff;
+    position: fixed;
+    z-index: 9999;
+    border-radius: 10rpx;
+    box-sizing: border-box;
+    padding: 25rpx;
+    margin-left: -260rpx;
+    margin-top: -220rpx;
+    left: 50%;
+    top: 50%;
+}
+
+.homie {
+    display: block;
+    width: 100%;
+    font-size: 36rpx;
+    color: #353535;
+    margin-top: 50rpx;
+}
+
+.shadowtop {
+    height: 80rpx;
+    width: 100%;
+}
+
+.qudati {
+    /* line-height: 20rpx; */
+    font-size: 30rpx;
+    color: #888;
+    background-color: #fff;
+   text-indent: 25rpx;
+   text-align: left;
+}
+
+.iknow {
+    display: block;
+    color: #09bb07;
+    font-size: 34rpx;
+    text-align: center;
+    height: 50rpx;
+    line-height: 50rpx;
+    border-top: 1px solid #f4f4f4;
+    background-color: #fff;
+    margin-top: 50rpx;
+
+}
+
+/* tab栏切换 */
+
+.swiper-tab {
+    margin: 0rpx 0 40rpx 0;
+}
+
+.swiper-tab-list {
+    font-size: 36rpx;
+    display: inline-block;
+    color: #353535;
+    width: 20%;
+    padding: 20rpx 0 24rpx 0;
+    margin: 0 6.6%;
+    text-align: center;
+}
+
+.on {
+    border-bottom: 4rpx solid #fb7a12;
+    color: #fb7a12;
+    font-weight: bold;
+}
+
+.swiper-box {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 10rpx;
+    height: 770rpx !important;
+}
+
+.theme {
+    text-align: center;
+    z-index: 990;
+}
+
+.center {
+    height: 100rpx;
+    width: 100%;
+    margin-bottom: 40rpx;
+}
+
+/*大类题库  */
+
+.txt {
+    position: relative;
+    top: -280rpx;
+    left: 176rpx;
+    z-index: 999;
+    width: 400rpx;
+}
+
+.txt1 {
+    position: relative;
+    top: -300rpx;
+    left: 176rpx;
+    z-index: 999;
+    width: 400rpx;
+}
+
+.top {
+    margin-top: 9rpx;
+    display: block;
+    width: 100%;
+    font-size: 36rpx;
+    font-weight: 550;
+}
+
+.bottom {
+    font-size: 20rpx;
+    color: #585858;
+    position: relative;
+    top: -10rpx;
+}
+
+.imagesleft {
+    display: block;
+    width: 214rpx;
+    height: 11rpx;
+    float: left;
+    margin-top: 22rpx;
+    padding-left: 34rpx;
+}
+
+.imagesright {
+    display: block;
+    width: 214rpx;
+    height: 11rpx;
+    float: right;
+    margin-top: 22rpx;
+    padding-right: 34rpx;
+}
+
+.bigclass {
+    text-align: center;
+    padding-left: 26rpx;
+    padding-right: 26rpx;
+}
+
+.box {
+    margin-top: 68rpx;
+}
+
+.questions {
+    height: 250rpx;
+}
+
+.questionsimages {
+    width: 682rpx;
+    height: 200rpx;
+    z-index: 8;
+}
+
+.smallquestionsimages {
+    display: inline-block;
+    width: 400rpx;
+    height: 132rpx;
+    z-index: 9;
+    position: relative;
+    top: -180rpx;
+    left: 180rpx;
+}
+
+.smallquestionsimages1 {
+    display: inline-block;
+    width: 400rpx;
+    height: 132rpx;
+    z-index: 9;
+    position: relative;
+    top: -165rpx;
+    left: 180rpx;
+}
+.smallquestionsimages1{
+  width: 400rpx;
+  height: 132rpx;
+  z-index: 9;
+  position: relative;
+  top: -165rpx;
+  left: 180rpx;
+}
+
+.smallquestionsimages1 {
+    display: inline-block;
+    width: 400rpx;
+    height: 132rpx;
+    z-index: 9;
+    position: relative;
+    top: -165rpx;
+    left: 180rpx;
+}
+
+navigator {
+    height: 200rpx;
+}
+
+.shadowdown {
+    height: 80rpx;
+    width: 100%;
+    position: relative;
+    top: 20rpx;
+}
+
+.single_double {
+    width: 420rpx;
+    height: 140rpx;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -165rpx;
+    left: 166rpx;
+    z-index: 998;
+}
+
+.outcircle {
+    width: 140rpx;
+    height: 140rpx;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.incircle {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    margin: 20rpx auto;
+    background-color: white;
+}
+
+.mytext {
+    line-height: 100rpx;
+    color: #353535;
+}
+
+/* ZY */
+
+.bg {
+    position: absolute;
+    z-index: 9998;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+}
+
+.bind_phone {
+    position: relative;
+    z-index: 99999;
+}
+
+.max_img {
+    width: 588rpx;
+    height: 732rpx;
+    margin-left: -294rpx;
+    left: 50%;
+    position: fixed;
+    top: 0;
+}
+
+.max_img image {
+    width: 100%;
+    height: 100%;
+}
+
+.close {
+    width: 85rpx;
+    height: 85rpx;
+    position: fixed;
+    top: 50rpx;
+    right: 70rpx;
+}
+
+.close image {
+    width: 100%;
+    height: 100%;
+}
+
+.tatil_hint {
+    color: #ffba1b;
+    font-size: 38rpx;
+    text-align: center;
+    margin: 20rpx 0 60rpx 0;
+}
+
+.tatil_hint_text {
+    color: #fff;
+    font-size: 50rpx;
+}
+
+.TC_btn {
+    width: 580rpx;
+    height: 94rpx;
+    border-radius: 10rpx;
+    background: -webkit-linear-gradient(top, #fa8e59, #fb5a3d);
+    margin: 0 auto;
+}
+
+.TC_btn image {
+    width: 200rpx;
+    height: 50rpx;
+    margin-left: -100rpx;
+    margin-top: -25rpx;
+    left: 50%;
+    top: 38%;
+    position: relative;
+}

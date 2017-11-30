@@ -1,0 +1,61 @@
+<!--pages/myanswer/t_statistics/t_statistics.wxml-->
+<view class='outer'>
+    <view class='user'>
+        <!-- 用户头像1 -->
+        <view class='user_L'>
+            <view class='head_m'>
+                <image style='border-radius: 50%' src='{{head_L}}'></image>
+            </view>
+            <view class='name_m'>
+                <text>{{name_L}}</text>
+                <text>{{score_L}}</text>
+            </view>
+        </view>
+        <!-- 计时 -->
+        <view class='timv'>
+            <image src='../../../images/vs12x.png'></image>
+        </view>
+        <!-- 用户头像2 -->
+        <view class='user_R'>
+            <view class='head_m'>
+                <image style='border-radius: 50%' src='{{head_R}}'></image>
+            </view>
+            <view class='name_m'>
+                <text>{{name_R}}</text>
+                <text>{{score_R}}</text>
+            </view>
+        </view>
+    </view>
+    <!-- 完胜/失败 -->
+    <view class='Logbuch'>{{Logbuch}}</view>
+    <!-- 分数统计 -->
+    <view class='main'>
+        <view>
+            <text>总答题：</text>
+            <text>{{S_number}}</text>
+        </view>
+        <view>
+            <text>答对数：</text>
+            <text>{{S_amount}}</text>
+        </view>
+        <view>
+            <text>本轮得分：</text>
+            <text>{{S_score}}</text>
+        </view>
+        <view>
+            <text>额外奖励：</text>
+            <text>{{S_award}}</text>
+        </view>
+        <view>
+            <text>今日排名：</text>
+            <text>{{S_ranking}}</text>
+        </view>
+    </view>
+    <button class='btn' bindtap='continue_ans'>再来一局</button>
+</view>
+
+
+
+
+
+    

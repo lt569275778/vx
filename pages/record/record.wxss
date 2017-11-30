@@ -1,0 +1,37 @@
+/* pages/record/record.wxss */
+.top{
+  height: 50rpx;
+  background-color: #f8fbff;
+}
+.right {
+  float: right;
+  height: 119rpx;
+  line-height: 119rpx;
+  font-size: 28rpx;
+  color: #353535
+}
+
+.left {
+  float: left;
+  /* line-height: 119rpx; */
+}
+
+.down {
+  border-bottom: 1px solid #aaa;
+  padding-left: 24rpx;
+  padding-right: 24rpx;
+  /* padding-bottom: 26rpx; */
+ height: 125rpx;
+  box-sizing: border-box;
+}
+.detailsdown{
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #888;
+}
+.detailsup{
+  font-size: 30rpx;
+  color: #353535;
+    margin-top: 26rpx;
+
+}
